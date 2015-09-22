@@ -1,0 +1,115 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<div class="section" id="sub-nav" style="max-height: 200px;">
+    <div class="container">
+        <div class="row">
+             <div class="col-md-2"></div>
+                  <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Select Coin</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="btn-group btn-group-lg">
+                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="fa fa-caret-down"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Select Exchange</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="btn-group btn-group-lg">
+                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Dropdown <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="section text-center"><div class="container"><div class="row"><div class="col-md-12"><h1>Running Bots:</h1></div></div></div></div><div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-hover table-striped">
+                    <tbody>
+                    <tr>
+                        <td>Volume</td>
+                        <td>C-Cex</td>
+                        <td>BTC-SNRG</td>
+                        <td>1/20</td>
+                        <td>10/50</td>
+                        <td>1/5</td>
+                        <td>50/100</td>
+
+                    </tr>
+                    <tr>
+                        <td>Order Stacking</td>
+                        <td>Bittrex</td>
+                        <td>BTC-SNRG</td>
+                        <td>1/20</td>
+                        <td>10/50</td>
+                        <td>555</td>
+                        <td>50/100</td>
+                    </tr>
+                    <tr>
+                        <td>Programmed</td>
+                        <td>Cryptsy</td>
+                        <td>BTC-SNRG</td>
+                        <td>1/20</td>
+                        <td>10/50</td>
+                        <td>1/5</td>
+                        <td>50/100</td>
+                    </tr>
+
+                     <tr>
+                        <td>Ping-Pong</td>
+                        <td>C-Cex</td>
+                        <td>BTC-SNRG</td>
+                        <td>1/20</td>
+                        <td>10/50</td>
+                        <td>1/5</td>
+                        <td>50/100</td>
+                    </tr>
+
+                    </tbody>
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Exchange</th>
+                        <th>Market</th>
+                        <th>Coins</th>
+                        <th>Spread</th>
+                        <th>Remaining</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+             <p>&nbsp;</p>
+                     <div align="center"><button class="btn btn-info btn-lg">New Bot</button></div>
+        </div>
+    </div>
+</div>
+
+
+</body></html>
+
+{% endblock %}
