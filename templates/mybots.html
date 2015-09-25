@@ -1,115 +1,362 @@
 {% extends 'layout.html' %}
+
 {% block body %}
+    <!-- Page -->
+    <div class="page">
+        <div class="page-content padding-30 container-fluid">
 
-<div class="section" id="sub-nav" style="max-height: 200px;">
-    <div class="container">
-        <div class="row">
-             <div class="col-md-2"></div>
-                  <div class="col-md-2"></div>
-            <div class="col-md-2">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Select Coin</h3>
-                    </div>
+            <div class="col-md-6">
+                <div class="panel">
                     <div class="panel-body">
-                        <div class="btn-group btn-group-lg">
-                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="fa fa-caret-down"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li>
-                                    <a href="#">Action</a>
-                                </li>
-                            </ul>
+                        <!-- Example Bordered Table -->
+                        <div class="example-wrap">
+                            <h4 class="example-title">Running Bots</h4>
+
+                            <div class="example table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>Task</th>
+                                        <th>Progress</th>
+                                        <th>Deadline</th>
+                                        <th class="text-nowrap">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Lunar probe project</td>
+                                        <td>
+                                            <div class="progress progress-xs margin-vertical-10 ">
+                                                <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
+                                            </div>
+                                        </td>
+                                        <td>May 15, 2015</td>
+                                        <td class="text-nowrap">
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Edit">
+                                                <i class="icon wb-wrench" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Delete">
+                                                <i class="icon wb-close" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dream successful plan</td>
+                                        <td>
+                                            <div class="progress progress-xs margin-vertical-10 ">
+                                                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                                            </div>
+                                        </td>
+                                        <td>July 1, 2015</td>
+                                        <td class="text-nowrap">
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Edit">
+                                                <i class="icon wb-wrench" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Delete">
+                                                <i class="icon wb-close" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Office automatization</td>
+                                        <td>
+                                            <div class="progress progress-xs margin-vertical-10 ">
+                                                <div class="progress-bar progress-bar-success"
+                                                     style="width: 100%"></div>
+                                            </div>
+                                        </td>
+                                        <td>Apr 12, 2015</td>
+                                        <td class="text-nowrap">
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Edit">
+                                                <i class="icon wb-wrench" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Delete">
+                                                <i class="icon wb-close" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>The sun climbing plan</td>
+                                        <td>
+                                            <div class="progress progress-xs margin-vertical-10 ">
+                                                <div class="progress-bar progress-bar-primary" style="width: 70%"></div>
+                                            </div>
+                                        </td>
+                                        <td>Aug 9, 2015</td>
+                                        <td class="text-nowrap">
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Edit">
+                                                <i class="icon wb-wrench" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Delete">
+                                                <i class="icon wb-close" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Open strategy</td>
+                                        <td>
+                                            <div class="progress progress-xs margin-vertical-10 ">
+                                                <div class="progress-bar progress-bar-primary" style="width: 85%"></div>
+                                            </div>
+                                        </td>
+                                        <td>Apr 2, 2015</td>
+                                        <td class="text-nowrap">
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Edit">
+                                                <i class="icon wb-wrench" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Delete">
+                                                <i class="icon wb-close" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tantas earum numeris</td>
+                                        <td>
+                                            <div class="progress progress-xs margin-vertical-10 ">
+                                                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                                            </div>
+                                        </td>
+                                        <td>July 11, 2015</td>
+                                        <td class="text-nowrap">
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Edit">
+                                                <i class="icon wb-wrench" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                                                    data-toggle="tooltip"
+                                                    data-original-title="Delete">
+                                                <i class="icon wb-close" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+
+                                <div align="center">
+                                    <button class="btn btn-info" data-target="#exampleNifty3dSlit" data-toggle="modal"
+                                            type="button">New Bot
+                                    </button>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Select Exchange</h3>
-                    </div>
+
+
+            <div class="col-md-6">
+
+                <!-- Example Contextual Classes -->
+                <div class="panel">
                     <div class="panel-body">
-                        <div class="btn-group btn-group-lg">
-                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Dropdown <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li>
-                                    <a href="#">Action</a>
-                                </li>
-                            </ul>
+                        <div class="example-wrap">
+                            <h4 class="example-title">Bot History</h4>
+
+                            <div class="example table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Order note</th>
+                                        <th>Product</th>
+                                        <th>Buyer</th>
+                                        <th>payment</th>
+                                        <th>Date</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="active">
+                                        <td># 259648</td>
+                                        <td>As we got further and further away, it [the Earth] diminished
+                                            in size.
+                                        </td>
+                                        <td>Kode Gaming Laptop</td>
+                                        <td>Crystal Bates</td>
+                                        <td>Credit Card</td>
+                                        <td>5/10/2015</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td># 486524</td>
+                                        <td>Tantas earum numeris, scribi innumerabiles quietae clariora.</td>
+                                        <td>New Season Jacket</td>
+                                        <td>Nathan Watts</td>
+                                        <td>Paypal</td>
+                                        <td>5/11/2015</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td># 985632</td>
+                                        <td>Metum quieti agatur ut sequitur delectatio accusamus.</td>
+                                        <td>IO Mouse</td>
+                                        <td>Ronnie Ellis</td>
+                                        <td>Credit Card</td>
+                                        <td>5/16/2015</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td># 159853</td>
+                                        <td>Incorrupte torquatum animi nudus, pendet fugiamus pariter.</td>
+                                        <td>Doe Bike</td>
+                                        <td>Daniel Russell</td>
+                                        <td>Paypal</td>
+                                        <td>5/22/2015</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td># 159853</td>
+                                        <td>Incorrupte torquatum animi nudus, pendet fugiamus pariter.</td>
+                                        <td>Doe Bike</td>
+                                        <td>Daniel Russell</td>
+                                        <td>Paypal</td>
+                                        <td>5/22/2015</td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
+                        <!-- End Example Contextual Classes -->
                     </div>
+
                 </div>
             </div>
 
-        </div>
-    </div>
-</div>
-<div class="section text-center"><div class="container"><div class="row"><div class="col-md-12"><h1>Running Bots:</h1></div></div></div></div><div class="section">
-    <div class="container">
-        <div class="row">
             <div class="col-md-12">
-                <table class="table table-bordered table-hover table-striped">
-                    <tbody>
-                    <tr>
-                        <td>Volume</td>
-                        <td>C-Cex</td>
-                        <td>BTC-SNRG</td>
-                        <td>1/20</td>
-                        <td>10/50</td>
-                        <td>1/5</td>
-                        <td>50/100</td>
+                <div class="panel">
+                    <div class="panel-body">
+                        <!-- Example Responsive -->
+                        <div class="example-wrap">
+                            <h4 class="example-title">Order History</h4>
 
-                    </tr>
-                    <tr>
-                        <td>Order Stacking</td>
-                        <td>Bittrex</td>
-                        <td>BTC-SNRG</td>
-                        <td>1/20</td>
-                        <td>10/50</td>
-                        <td>555</td>
-                        <td>50/100</td>
-                    </tr>
-                    <tr>
-                        <td>Programmed</td>
-                        <td>Cryptsy</td>
-                        <td>BTC-SNRG</td>
-                        <td>1/20</td>
-                        <td>10/50</td>
-                        <td>1/5</td>
-                        <td>50/100</td>
-                    </tr>
+                            <div class="example">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Invoice</th>
+                                            <th>User</th>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                            <th>Status</th>
+                                            <th>Country</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><a href="javascript:void(0)">Order #26589</a></td>
+                                            <td>Herman Beck</td>
+                                            <td>
+                                                <span class="text-muted"><i class="wb wb-time"></i> Oct 16, 2015</span>
+                                            </td>
+                                            <td>$45.00</td>
+                                            <td>
+                                                <div class="label label-table label-success">Paid</div>
+                                            </td>
+                                            <td>EN</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0)">Order #58746</a></td>
+                                            <td>Mary Adams</td>
+                                            <td>
+                                                <span class="text-muted"><i class="wb wb-time"></i> Oct 12, 2015</span>
+                                            </td>
+                                            <td>$245.30</td>
+                                            <td>
+                                                <div class="label label-table label-info">Shipped</div>
+                                            </td>
+                                            <td>CN</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0)">Order #98458</a></td>
+                                            <td>Caleb Richards</td>
+                                            <td>
+                                                <span class="text-muted"><i class="wb wb-time"></i> May 18, 2015</span>
+                                            </td>
+                                            <td>$38.00</td>
+                                            <td>
+                                                <div class="label label-table label-primary">Shipped</div>
+                                            </td>
+                                            <td>AU</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0)">Order #32658</a></td>
+                                            <td>June Lane</td>
+                                            <td>
+                                                <span class="text-muted"><i class="wb wb-time"></i> Apr 28, 2015</span>
+                                            </td>
+                                            <td>$77.99</td>
+                                            <td>
+                                                <div class="label label-table label-info">Paid</div>
+                                            </td>
+                                            <td>FR</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Example Responsive -->
+                    </div>
 
-                     <tr>
-                        <td>Ping-Pong</td>
-                        <td>C-Cex</td>
-                        <td>BTC-SNRG</td>
-                        <td>1/20</td>
-                        <td>10/50</td>
-                        <td>1/5</td>
-                        <td>50/100</td>
-                    </tr>
 
-                    </tbody>
-                    <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Exchange</th>
-                        <th>Market</th>
-                        <th>Coins</th>
-                        <th>Spread</th>
-                        <th>Remaining</th>
-                        <th></th>
-                    </tr>
-                    </thead>
-                </table>
+                </div>
+                <!-- End Panel -->
             </div>
-             <p>&nbsp;</p>
-                     <div align="center"><button class="btn btn-info btn-lg">New Bot</button></div>
+
+
+             <!-- Modal -->
+                  <div class="modal fade modal-3d-slit" id="exampleNifty3dSlit" aria-hidden="true"
+                  aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                          <h4 class="modal-title">Modal Title</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>One fine body…</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default margin-0" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Modal -->
+
+
+
+            <!--end page-->
         </div>
+
     </div>
-</div>
 
 
-</body></html>
+
+
 
 {% endblock %}

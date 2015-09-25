@@ -1,0 +1,147 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+    <div class="section section-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Welcome, Kuro</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Current Usage Per Day:
+              <i class="label label-success">2.5</i>
+            </h3>
+            <h3>Days Remaining:
+              <i class="label label-success">30</i>
+            </h3>
+          </div>
+          <div class="col-md-4">
+            <h1>Burn Address:</h1>
+            <p id="copyme">SNRGff78g6f8g76f8g78d9fg7fdf86df8d67f8df6</p>
+            <button class="btn btn-block btn-info">Copy</button>
+          </div>
+          <div class="col-md-4 text-center">
+            <h1>Balance:</h1>
+            <label style="font-size: 20px" class="label label-success">10000 SNRG</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <hr class="style">
+              <div align="center"><h2>Api Keys:</h2></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="bittrex" class="control-label">Bittrex</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="bittrex" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="ccex" class="control-label">C-Cex</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="ccex" placeholder="">
+                </div>
+              </div>
+                    <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="Poloneix" class="control-label">Poloneix</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Poloneix" placeholder="">
+                </div>
+              </div>
+                              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="Cryptsy" class="control-label">Cryptsy</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Cryptsy" placeholder="">
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+          <div class="col-md-6">
+              <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="btxsec" class="control-label">Secret</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="btxsec" placeholder="">
+                </div>
+              </div>
+              </form>
+
+                             <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-2">
+                 <p>&nbsp;</p>
+                </div>
+                <div class="col-sm-10">
+
+                </div>
+              </div>
+              </form>
+
+               <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="polosec" class="control-label">Secret</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="polosec" placeholder="">
+                </div>
+              </div>
+              </form>
+
+
+               <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="crysec" class="control-label">Secret</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="crysec" placeholder="">
+                </div>
+              </div>
+              </form>
+
+
+          </div>
+        </div>
+      </div>
+        <p>&nbsp;</p>
+        <div align="center"><button class="btn btn-success btn-lg">Save</button></div>
+    </div>
+  </body>
+
+</html>
+
+{% endblock %}

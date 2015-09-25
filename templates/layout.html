@@ -1,67 +1,296 @@
-<html>
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
-    rel="stylesheet" type="text/css">
-    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
-    rel="stylesheet" type="text/css">
-    <style>
-      hr.style {
-          border: 0;
-          height: 1px;
-          background: #333;
-          background-image: linear-gradient(to right, #ccc, #333, #ccc);
-      }
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="bootstrap admin template">
+  <meta name="author" content="">
 
-        .footer {
-    padding: 79px 0;
-    background: #009CDE;
-    text-align: center;
+  <title>SNRG Bot</title>
 
-}
+  <link rel="apple-touch-icon" href="../static/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="http://getbootstrapadmin.com/remark/assets/images/favicon.ico">
 
-    </style>
-  </head>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="../static/css/site.min.css">
 
-  <body>
-    <div class="navbar navbar-default navbar-static-top" id="nav">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <a href="/">Home</a>
+
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../static/vendor/animsition/animsition.min.css">
+  <link rel="stylesheet" href="../static/vendor/asscrollable/asScrollable.min.css">
+  <link rel="stylesheet" href="../static/vendor/switchery/switchery.min.css">
+  <link rel="stylesheet" href="../static/vendor/intro-js/introjs.min.css">
+  <link rel="stylesheet" href="../static/vendor/slidepanel/slidePanel.min.css">
+  <link rel="stylesheet" href="../static/vendor/flag-icon-css/flag-icon.min.css">
+
+  <!-- Plugins For This Page -->
+  <link rel="stylesheet" href="../static/vendor/chartist-js/chartist.min.css">
+  <link rel="stylesheet" href="../static/vendor/jvectormap/jquery-jvectormap.min.css">
+  <link rel="stylesheet" href="../static/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.min.css">
+
+  <!-- Page -->
+  <link rel="stylesheet" href="../static/examples/css/dashboard/v1.css">
+  <link rel="stylesheet" href="../static/examples/css/uikit/modals.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../static/fonts/web-icons/web-icons.min.css">
+  <link rel="stylesheet" href="../static/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <link rel="stylesheet" href="../static/fonts/weather-icons/weather-icons.css">
+
+  <!--[if lt IE 9]>
+    <script src="../static/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 10]>
+    <script src="../static/vendor/media-match/media.match.min.js"></script>
+    <script src="../static/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- Scripts -->
+  <script src="../static/vendor/modernizr/modernizr.min.js"></script>
+  <script src="../static/vendor/breakpoints/breakpoints.min.js"></script>
+  <script>
+    Breakpoints();
+  </script>
+</head>
+<body class="dashboard">
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
+      data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
+      data-toggle="collapse">
+        <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+      </button>
+      <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+        <img class="navbar-brand-logo" src="http://puu.sh/kmPDa/ff06369d38.png" title="">
+        <span class="navbar-brand-text"> Synergy</span>
+      </div>
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search"
+      data-toggle="collapse">
+        <span class="sr-only">Toggle Search</span>
+        <i class="icon wb-search" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="hidden-float" id="toggleMenubar">
+            <a data-toggle="menubar" href="#" role="button">
+              <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+            </a>
+          </li>
+          <li class="hidden-xs" id="toggleFullscreen">
+            <a class="icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+              <span class="sr-only">Toggle fullscreen</span>
+            </a>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar -->
+
+        <!-- Navbar Toolbar Right -->
+
+        <!-- End Navbar Toolbar Right -->
+      </div>
+      <!-- End Navbar Collapse -->
+
+      <!-- Site Navbar Seach -->
+      <div class="collapse navbar-search-overlap" id="site-navbar-search">
+        <form role="search">
+          <div class="form-group">
+            <div class="input-search">
+              <i class="input-search-icon wb-search" aria-hidden="true"></i>
+              <input type="text" class="form-control" name="site-search" placeholder="Search...">
+              <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search"
+              data-toggle="collapse" aria-label="Close"></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- End Site Navbar Seach -->
+    </div>
+  </nav>
+  <div class="site-menubar">
+    <div class="site-menubar-body">
+      <div>
+        <div>
+          <ul class="site-menu">
+            <li class="site-menu-category">General</li>
+            <li class="site-menu-item has-sub active open">
+              <a href="javascript:void(0)" data-slug="dashboard">
+                <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
+                <span class="site-menu-title">Dashboard</span>
+
+              </a>
+              <ul class="site-menu-sub">
+                <li class="site-menu-item active">
+                  <a class="animsition-link" href="/" data-slug="dashboard-v1">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Home</span>
+                  </a>
+                </li>
+                  <li class="site-menu-item ">
+                  <a class="animsition-link" href="/mytrading" data-slug="dashboard-v1">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">My Trading</span>
+                  </a>
+                </li>
+                  <li class="site-menu-item ">
+                  <a class="animsition-link" href="/mybots" data-slug="dashboard-v1">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">My Bots</span>
+                  </a>
+                </li>
+
+              </ul>
+                <li class="site-menu-item has-sub active open">
+              <a href="javascript:void(0)" data-slug="dashboard">
+                <i class="site-menu-icon wb-settings" aria-hidden="true"></i>
+                <span class="site-menu-title">Settings</span>
+              </a>
+              <ul class="site-menu-sub">
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="/settings-api" data-slug="dashboard-v1">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">API Keys</span>
+                  </a>
+                </li>
+
+              </ul>
+                            <ul class="site-menu-sub">
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="#" data-slug="dashboard-v1">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">My Account</span>
+                  </a>
+                </li>
+
+              </ul>
+
             </li>
-            <li>
-              <a href="#">My Trading</a>
-            </li>
-            <li>
-              <a href="/mybots">My Bots</a>
-            </li>
-            <li>
-              <a href="/settings">Settings</a>
-            </li>
+
+
           </ul>
+
+
         </div>
       </div>
     </div>
-{% block body %}{% endblock %}
- <footer class="footer">
-      <div class="container">
-      </div>
-    </footer>
 
+    <div class="site-menubar-footer">
+      <a href="/settings-api" class="fold-show" data-placement="top" data-toggle="tooltip"
+      data-original-title="Settings">
+        <span class="icon wb-settings" aria-hidden="true"></span>
+      </a>
+      <a href="/lockscreen" data-placement="top" data-toggle="tooltip" data-original-title="Lock">
+        <span class="icon wb-eye-close" aria-hidden="true"></span>
+      </a>
+      <a href="/login" data-placement="top" data-toggle="tooltip" data-original-title="Logout">
+        <span class="icon wb-power" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+
+
+<!-- End Nav -->
+
+  {% block body %}{% endblock %}
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span class="site-footer-legal">© 2015 <a href="">SNRG</a></span>
+    <div class="site-footer-right">
+       <i class="red-600 wb wb-heart"></i> <a href=""></a>
+    </div>
+  </footer>
+
+  <!-- Core  -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../static/vendor/animsition/jquery.animsition.min.js"></script>
+  <script src="../static/vendor/asscroll/jquery-asScroll.min.js"></script>
+  <script src="../static/vendor/mousewheel/jquery.mousewheel.min.js"></script>
+  <script src="../static/vendor/asscrollable/jquery.asScrollable.all.min.js"></script>
+  <script src="../static/vendor/ashoverscroll/jquery-asHoverScroll.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="../static/vendor/switchery/switchery.min.js"></script>
+  <script src="../static/vendor/intro-js/intro.min.js"></script>
+  <script src="../static/vendor/screenfull/screenfull.js"></script>
+  <script src="../static/vendor/slidepanel/jquery-slidePanel.min.js"></script>
+
+  <!-- Plugins For This Page -->
+  <script src="../static/vendor/skycons/skycons.js"></script>
+  <script src="../static/vendor/chartist-js/chartist.min.js"></script>
+  <script src="../static/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.min.js"></script>
+  <script src="../static/vendor/aspieprogress/jquery-asPieProgress.min.js"></script>
+  <script src="../static/vendor/jvectormap/jquery-jvectormap.min.js"></script>
+  <script src="../static/vendor/jvectormap/maps/jquery-jvectormap-au-mill-en.js"></script>
+  <script src="../static/vendor/matchheight/jquery.matchHeight-min.js"></script>
+
+  <!-- Scripts -->
+  <script src="../static/js/core.min.js"></script>
+  <script src="../static/js/site.min.js"></script>
+
+  <script src="../static/js/sections/menu.min.js"></script>
+  <script src="../static/js/sections/menubar.min.js"></script>
+  <script src="../static/js/sections/gridmenu.min.js"></script>
+  <script src="../static/js/sections/sidebar.min.js"></script>
+
+  <script src="../static/js/configs/config-colors.min.js"></script>
+  <script src="../static/js/configs/config-tour.min.js"></script>
+
+  <script src="../static/js/components/asscrollable.min.js"></script>
+  <script src="../static/js/components/animsition.min.js"></script>
+  <script src="../static/js/components/slidepanel.min.js"></script>
+  <script src="../static/js/components/switchery.min.js"></script>
+
+  <!-- Scripts For This Page -->
+  <script src="../static/js/components/matchheight.min.js"></script>
+  <script src="../static/js/components/jvectormap.min.js"></script>
+
+  <script src="../static/examples/js/dashboard/v1.js"></script>
+
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '../../../www.google-analytics.com/analytics.js',
+      'ga');
+
+    ga('create', 'UA-65522665-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
-</html>
 
+</html>
