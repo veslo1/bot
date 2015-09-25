@@ -148,20 +148,20 @@
     $('#exampleWarningCancel').on("click", function() {
       swal({
           title: "Are you sure?",
-          text: "You will not be able to recover this imaginary file!",
+          text: "You will stop all market activity on the bot instantly",
           type: "warning",
           showCancelButton: true,
           confirmButtonColor: '#DD6B55',
-          confirmButtonText: 'Yes, delete it!',
-          cancelButtonText: "No, cancel plx!",
+          confirmButtonText: 'Yes, stop it!',
+          cancelButtonText: "No, go back!",
           closeOnConfirm: false,
           closeOnCancel: false
         },
         function(isConfirm) {
           if (isConfirm) {
-            swal("Deleted!", "Your imaginary file has been deleted!", "success");
+            swal("Deleted!", "Your bot has been stopped", "success");
           } else {
-            swal("Cancelled", "Your imaginary file is safe :)", "error");
+            swal("Cancelled", "Your bot is still running :)", "error");
           }
         });
     });
